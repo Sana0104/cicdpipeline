@@ -30,8 +30,8 @@ phases:
       - echo writing image definitions file...
       - printf '[{"name":"%s","imageUri":"%s"}]' $DOCKER_CONTAINER_NAME $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
       - echo $DOCKER_CONTAINER_NAME
-      - echo printing imagedefinitons.json
-      - cat imagedefinitons.json
+      - echo printing imagedefinitions.json
+      - cat imagedefinitions.json
 artifacts:
     files:
       - imagedefinitions.json
